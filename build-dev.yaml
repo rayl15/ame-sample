@@ -22,7 +22,7 @@ phases:
   post_build:
     commands:
        - docker push "$IMAGE_URI"
-       - printf '[{"name":"node-api","imageUri":"%s"}]' "$IMAGE_URI" > ../images.json
+       - printf '[{"name":"node-api","imageUri":"%s"}]' "$IMAGE_URI" > images.json
        - ls -ll
 
 artifacts:
