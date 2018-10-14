@@ -23,10 +23,10 @@ phases:
     commands:
        - docker push "$IMAGE_URI"
        - printf '[{"name":"node-api","imageUri":"%s"}]' "$IMAGE_URI" > ../images.json
+       - ls -ll
 
 artifacts:
-    type: zip
     files:
-    - images.json     
+     - images.json     
 
 
