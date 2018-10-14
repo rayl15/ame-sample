@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   '@angular',
+1 verbose cli   'cli' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData @angular
+8 silly fetchPackageMetaData cli
+9 silly fetchOtherPackageData @angular
+10 silly cache add args [ '@angular', null ]
+11 verbose cache add spec @angular
+12 silly fetchNamedPackageData cli
+13 silly mapToRegistry name cli
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/cli
+17 silly cache add parsed spec Result {
+17 silly cache add   raw: '@angular',
+17 silly cache add   scope: null,
+17 silly cache add   name: null,
+17 silly cache add   rawSpec: '@angular',
+17 silly cache add   spec: '/media/rahulsharma/429E-566C/project/ame-devops/@angular',
+17 silly cache add   type: 'local' }
+18 verbose request uri https://registry.npmjs.org/cli
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 11:51:40 PM
+21 verbose request id eec973a44771b526
+22 http request GET https://registry.npmjs.org/cli
+23 error addLocal Could not install /media/rahulsharma/429E-566C/project/ame-devops/@angular
+24 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/media/rahulsharma/429E-566C/project/ame-devops/@angular'
+24 silly fetchPackageMetaData     at Error (native)
+24 silly fetchPackageMetaData  error for @angular { [Error: ENOENT: no such file or directory, open '/media/rahulsharma/429E-566C/project/ame-devops/@angular']
+24 silly fetchPackageMetaData   errno: -2,
+24 silly fetchPackageMetaData   code: 'ENOENT',
+24 silly fetchPackageMetaData   syscall: 'open',
+24 silly fetchPackageMetaData   path: '/media/rahulsharma/429E-566C/project/ame-devops/@angular' }
+25 http 200 https://registry.npmjs.org/cli
+26 verbose headers { date: 'Sun, 14 Oct 2018 18:21:40 GMT',
+26 verbose headers   'content-type': 'application/json; charset=UTF-8',
+26 verbose headers   'transfer-encoding': 'chunked',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'set-cookie': [ '__cfduid=d87073cf9cfe105798999c5639430136b1539541300; expires=Mon, 14-Oct-19 18:21:40 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+26 verbose headers   'cf-cache-status': 'HIT',
+26 verbose headers   'cache-control': 'max-age=300',
+26 verbose headers   'cf-ray': '469c11285fa02ef3-DEL',
+26 verbose headers   etag: 'W/"0d6b814ba44407b768ae5d1b13680baa"',
+26 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+26 verbose headers   'last-modified': 'Sat, 26 May 2018 19:59:41 GMT',
+26 verbose headers   vary: 'accept-encoding, accept',
+26 verbose headers   server: 'cloudflare',
+26 verbose headers   'content-encoding': 'gzip' }
+27 silly get cb [ 200,
+27 silly get   { date: 'Sun, 14 Oct 2018 18:21:40 GMT',
+27 silly get     'content-type': 'application/json; charset=UTF-8',
+27 silly get     'transfer-encoding': 'chunked',
+27 silly get     connection: 'keep-alive',
+27 silly get     'set-cookie': [ '__cfduid=d87073cf9cfe105798999c5639430136b1539541300; expires=Mon, 14-Oct-19 18:21:40 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+27 silly get     'cf-cache-status': 'HIT',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     'cf-ray': '469c11285fa02ef3-DEL',
+27 silly get     etag: 'W/"0d6b814ba44407b768ae5d1b13680baa"',
+27 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+27 silly get     'last-modified': 'Sat, 26 May 2018 19:59:41 GMT',
+27 silly get     vary: 'accept-encoding, accept',
+27 silly get     server: 'cloudflare',
+27 silly get     'content-encoding': 'gzip' } ]
+28 verbose get saving cli to /root/.npm/registry.npmjs.org/cli/.cache.json
+29 verbose makeDirectory /root/.npm creation not in flight; initializing
+30 silly makeDirectory /root/.npm uid: 1001 gid: 1001
+31 silly rollbackFailedOptional Starting
+32 silly rollbackFailedOptional Finishing
+33 silly runTopLevelLifecycles Starting
+34 silly runTopLevelLifecycles Finishing
+35 silly install printInstalled
+36 verbose stack Error: ENOENT: no such file or directory, open '/media/rahulsharma/429E-566C/project/ame-devops/@angular'
+36 verbose stack     at Error (native)
+37 verbose cwd /media/rahulsharma/429E-566C/project/ame-devops
+38 error Linux 4.15.0-36-generic
+39 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "@angular" "cli"
+40 error node v4.2.6
+41 error npm  v3.5.2
+42 error path /media/rahulsharma/429E-566C/project/ame-devops/@angular
+43 error code ENOENT
+44 error errno -2
+45 error syscall open
+46 error enoent ENOENT: no such file or directory, open '/media/rahulsharma/429E-566C/project/ame-devops/@angular'
+47 error enoent ENOENT: no such file or directory, open '/media/rahulsharma/429E-566C/project/ame-devops/@angular'
+47 error enoent This is most likely not a problem with npm itself
+47 error enoent and is related to npm not being able to find a file.
+48 verbose exit [ -2, true ]
