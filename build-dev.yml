@@ -1,7 +1,8 @@
 version: 0.1
 env:
-   S3_BUCKET: "ame-dev-web-ui-thebucket-a3wbgr52565v"
-   BUILD_ENV: "prod"
+  variables:
+     S3_BUCKET: "ame-dev-web-ui-thebucket-a3wbgr52565v"
+     BUILD_ENV: "prod"
 phases:
     install:
         commands:
@@ -11,10 +12,10 @@ phases:
     build:
         commands:
             - echo Build started on `date`
-            - ng build --prod
+            - ng build --${BUILD_ENV}
     post_build:
          commands:
-            - aws s3 cp dist s3://ame-dev-web-ui-thebucket-a3wbgr52565v --recursive
+            - aws s3 cp dist s3://${S3_BUCKET} --recursive
             - echo Build completed on `date`
 artifacts:
     files:
