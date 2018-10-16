@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    S3_BUCKET: "ame-qa-web-ui-thebucket-1w7vrjmolv0d1"
+    S3_BUCKET: "ame-qa-web-ui-thebucket-o13aq8vxbtsf"
     BUILD_ENV: "prod"
 
 phases:
