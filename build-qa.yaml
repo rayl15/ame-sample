@@ -1,0 +1,28 @@
+version: 0.2
+
+env:
+  variables:
+    S3_BUCKET: "ame-qa-web-ui-thebucket-1w7vrjmolv0d1"
+    BUILD_ENV: "prod"
+
+phases:
+
+  pre_build: 
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g @angular/cli
+      - echo Build started on `date`
+      - ng build --${BUILD_ENV}
+
+  build:
+    commands:
+       - aws s3 cp dist s3://${S3_BUCKET} --recursive
+       - echo Build completed on `date`
+
+
+artifacts:
+    files:
+        - '**/*'
+    base-directory: 'dist*'
+    discard-paths: yes     
